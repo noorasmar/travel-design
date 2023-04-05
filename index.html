@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Travel</title>
+  <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="rounded-4">
+    <div class="overlay"></div>
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid">
+        <div class="find">
+          <div class="item">
+            <img src="./assets/imgs/header/plan.png" alt="plan" />
+            <a href="#">Find Flight</a>
+          </div>
+          <div class="item">
+            <img src="./assets/imgs/header/bed.png" alt="plan" />
+            <a href="#">Find Stays</a>
+          </div>
+        </div>
+        <div class="navbar-brand">
+          <a href="#">
+            <img src="./assets/imgs/logo/logo.png" alt="plan" />
+          </a>
+        </div>
+        <div class="login">
+          <button type="button" class="btn btn-link">Login</button>
+          <button type="button" class="btn btn-light">Sign up</button>
+        </div>
+      </div>
+    </nav>
+    <!-- Title -->
+    <section class="title">
+      <div class="container text-center py-5">
+        <span>Helping Others</span>
+        <h1>LIVE & TRAVEL</h1>
+        <p>Special offers to suit your plan</p>
+      </div>
+    </section>
+  </header>
+
+  <!-- Booking Form -->
+  <section class="booking">
+    <div class="container">
+      <div class="tabs">
+        <div class="item active">
+          <img src="./assets/imgs/booking/b_plan.png" alt="b_plan" />
+          Flights
+        </div>
+        <div class="item">
+          <img src="./assets/imgs/booking/b_bed.png" alt="b_plan" />
+          Stays
+        </div>
+      </div>
+      <form>
+        <div class="row py-3">
+          <div class="col-md-4 col-sm-12">
+            <div class="input-wrapper">
+              <label class="l-title" for="pos">From - To</label>
+              <input class="l-input" type="pos" placeholder="Lahore - Karashi">
+              <img class="l-icon" src="./assets/imgs/booking/two-arrows.png" alt="arrows">
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="input-wrapper">
+              <label class="l-title" for="trip">Trip</label>
+              <select class="l-input" name="trip" id="trip">
+                <option value="return">Return</option>
+              </select>
+              <img class="l-icon" src="./assets/imgs/booking/chevron.png" alt="chevron">
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="input-wrapper">
+              <label class="l-title" for="date">Depart - Return</label>
+              <input class="l-input" id="date" type="date" placeholder="07 Nov 22 - 13 Nov 22">
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="input-wrapper">
+              <label class="l-title" for="passenger">Passenger - Class</label>
+              <input class="l-input" id="passenger" type="text" placeholder="1 Passenger, Economy">
+            </div>
+          </div>
+        </div>
+        <div class="buttons py-3">
+          <div class="item">
+            <button type="button" class="btn btn-link">
+              <img src="./assets/imgs/booking/plus.png" alt="plus"> Add Promo Code</button>
+          </div>
+          <div class="item">
+            <button type="button" class="btn btn-primary">
+              <img src="./assets/imgs/booking/send.png" alt="plus"> Show Filghts</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Plan Trip -->
+  <section class="plan">
+    <div class="container">
+      <div class="row">
+        <div class="col-8">
+          <h2>Plan your perfect trip</h2>
+          <p>Search Flights & Places Hire to our most popular destinations</p>
+        </div>
+        <div class="see-more col-4">
+          <button type="button" class="btn btn-light">See more places</button>
+        </div>
+      </div>
+      <div class="destinations py-3">
+        <div class="container">
+          <div class="row gx-lg-5 gx-md-3">
+            <div class="col-md-4 py-2">
+              <div class="item">
+                <img src="./assets/imgs/plan/turkey.png" alt="">
+                <div>
+                  <h5>Istanbul, Turkey</h5>
+                  <span>Flights . Hotels . Resorts</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 py-2">
+              <div class="item">
+                <img src="./assets/imgs/plan/sydney.png" alt="">
+                <div>
+                  <h5>Sydney, Australia</h5>
+                  <span>Flights . Hotels . Resorts</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 py-2">
+              <div class="item">
+                <img src="./assets/imgs/plan/baku.png" alt="">
+                <div>
+                  <h5>Baku, Azerbaijan</h5>
+                  <span>Flights . Hotels . Resorts</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 py-2">
+              <div class="item">
+                <img src="./assets/imgs/plan/istanbul.png" alt="">
+                <div>
+                  <h5>Malé, Maldives</h5>
+                  <span>Flights . Hotels . Resorts</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 py-2">
+              <div class="item">
+                <img src="./assets/imgs/plan/paris.png" alt="">
+                <div>
+                  <h5>Paris, France</h5>
+                  <span>Flights . Hotels . Resorts</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 py-2">
+              <div class="item">
+                <img src="./assets/imgs/plan/newyork.png" alt="">
+                <div>
+                  <h5>New York, US</h5>
+                  <span>Flights . Hotels . Resorts</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 py-2">
+              <div class="item">
+                <img src="./assets/imgs/plan/london.png" alt="">
+                <div>
+                  <h5>London, UK</h5>
+                  <span>Flights . Hotels . Resorts</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 py-2">
+              <div class="item">
+                <img src="./assets/imgs/plan/tokyo.png" alt="">
+                <div>
+                  <h5>Tokyo, Japan</h5>
+                  <span>Flights . Hotels . Resorts</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 py-2">
+              <div class="item">
+                <img src="./assets/imgs/plan/dubai.png" alt="">
+                <div>
+                  <h5>Dubai, UAE</h5>
+                  <span>Flights . Hotels . Resorts</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Show -->
+  <section class="show">
+    <div class="container">
+      <div class="row g-5">
+        <div class="col-md-6">
+          <div class="item flight">
+            <div class="overlay"></div>
+            <div class="info">
+              <h4>Flights</h4>
+              <p>Search Flights & Places Hire to our most popular destinations</p>
+              <div class="btn">
+                <button type="button" class="btn btn-primary">
+                  <img src="./assets/imgs/booking/send.png" alt="plus"> Show Filghts</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="item hotel">
+            <div class="overlay"></div>
+            <div class="info">
+              <h4>Hotels</h4>
+              <p>Search hotels & Places Hire to our most popular destinations</p>
+              <div class="btn">
+                <button type="button" class="btn btn-primary">
+                  <img src="./assets/imgs/booking/send.png" alt="plus"> Show Hotels</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reviews -->
+  <section class="reviews">
+    <div class="container">
+      <div class="row">
+        <div class="col-8">
+          <h2>Reviews</h2>
+          <p>What people says about Golobe facilities</p>
+        </div>
+        <div class="see-more col-4">
+          <button type="button" class="btn btn-light">See All</button>
+        </div>
+      </div>
+      <div class="row g-5 py-5">
+        <div class="col-md-4">
+          <div class="item">
+            <h4>“A real sense of community, nurtured”</h4>
+            <small>Really appreciate the   the staff during these tough times. Shoutout to Katie for helping me always, even when I was out of the country. And always available when needed.
+            </small>
+            <p>View more</p>
+            <div class="stars">
+              <img src="./assets/imgs/reviews/Vector.png" alt="">
+              <img src="./assets/imgs/reviews/Vector.png" alt="">
+              <img src="./assets/imgs/reviews/Vector.png" alt="">
+              <img src="./assets/imgs/reviews/Vector.png" alt="">
+              <img src="./assets/imgs/reviews/Vector.png" alt="">
+            </div>
+            <h6>Olga</h6>
+            <small>Weave Studios – Kai Tak
+            </small>
+            <div class="logo">
+              <img src="./assets/imgs/reviews/google.png" width="20" height="20" alt="">
+              <span>Google</span>
+            </div>
+            <img src="./assets/imgs/reviews/Rectangle 36.png" alt="">
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="item">
+            <h4>“A real sense of community, nurtured”</h4>
+            <small>Really appreciate the   the staff during these tough times. Shoutout to Katie for helping me always, even when I was out of the country. And always available when needed.
+            </small>
+            <p>View more</p>
+            <div class="stars">
+              <img src="./assets/imgs/reviews/Vector.png" alt="">
+              <img src="./assets/imgs/reviews/Vector.png" alt="">
+              <img src="./assets/imgs/reviews/Vector.png" alt="">
+              <img src="./assets/imgs/reviews/Vector.png" alt="">
+              <img src="./assets/imgs/reviews/Vector.png" alt="">
+            </div>
+            <h6>Olga</h6>
+            <small>Weave Studios – Kai Tak
+            </small>
+            <div class="logo">
+              <img src="./assets/imgs/reviews/google.png" width="20" height="20" alt="">
+              <span>Google</span>
+            </div>
+            <img src="./assets/imgs/reviews/Rectangle 36.png" alt="">
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="item">
+            <h4>“A real sense of community, nurtured”</h4>
+            <small>Really appreciate the   the staff during these tough times. Shoutout to Katie for helping me always, even when I was out of the country. And always available when needed.
+            </small>
+            <p>View more</p>
+            <div class="stars">
+              <img src="./assets/imgs/reviews/Vector.png" alt="">
+              <img src="./assets/imgs/reviews/Vector.png" alt="">
+              <img src="./assets/imgs/reviews/Vector.png" alt="">
+              <img src="./assets/imgs/reviews/Vector.png" alt="">
+              <img src="./assets/imgs/reviews/Vector.png" alt="">
+            </div>
+            <h6>Olga</h6>
+            <small>Weave Studios – Kai Tak
+            </small>
+            <div class="logo">
+              <img src="./assets/imgs/reviews/google.png" width="20" height="20" alt="">
+              <span>Google</span>
+            </div>
+            <img src="./assets/imgs/reviews/Rectangle 36.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Subscribe -->
+  <section class="subscribe">
+    <div class="container">
+      <div class="row g-5">
+        <div class="col-md-8 col-sm-12">
+          <h3>Subscribe<br/>Newsletter</h3>
+          <h4>The Travel</h4>
+          <p>Get inspired! Receive travel discounts, tips and behind the scenes stories.</p>
+          <div class="sub-btn">
+            <div class="input-group mb-3">
+              <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="button-addon2">
+              <button class="btn btn-outline-secondary" type="button" id="button-addon2">Subscribe</button>
+            </div> 
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-12">
+          <img src="./assets/imgs/sub/emojione-v1_open-mailbox-with-lowered-flag.png" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-2 col-sm-12 py-4">
+          <img class="logo" src="./assets/imgs/footer/Logo.png" alt="Logo">
+          <div class="media">
+            <img src="./assets/imgs/footer/facebook.png" alt="facebook">
+            <img src="./assets/imgs/footer/twitter.png" alt="twitter">
+            <img src="./assets/imgs/footer/youtube.png" alt="youtube">
+            <img src="./assets/imgs/footer/instagram.png" alt="instagram">
+          </div>
+        </div>
+        <div class="col-md-2 col-sm-12 py-4">
+          <h6>Our Destinations</h6>
+          <a href="#">Canada</a>
+          <a href="#">Alaska</a>
+          <a href="#">France</a>
+          <a href="#">Iceland</a>
+        </div>
+        <div class="col-md-2 col-sm-12 py-4">
+          <h6>Our Activities</h6>
+          <a href="#">Northern Lights</a>
+          <a href="#">Cruising & sailing</a>
+          <a href="#">Multi-activities</a>
+          <a href="#">Kayaing</a>
+        </div>
+        <div class="col-md-2 col-sm-12 py-4">
+          <h6>Travel Blogs</h6>
+          <a href="#">Bali Travel Guide</a>
+          <a href="#">Sri Lanks Travel Guide</a>
+          <a href="#">Peru Travel Guide</a>
+          <a href="#">Bali Travel Guide</a>
+        </div>
+        <div class="col-md-2 col-sm-12 py-4">
+          <h6>About Us</h6>
+          <a href="#">Our Story</a>
+          <a href="#">Work with us</a>
+        </div>
+        <div class="col-md-2 col-sm-12 py-4">
+          <h6>Contact Us</h6>
+          <a href="#">Our Story</a>
+          <a href="#">Work with us</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="./assets/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
